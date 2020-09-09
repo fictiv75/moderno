@@ -519,3 +519,45 @@
 }
 
 // AUTHOR END
+
+// TUTORIAL
+.tutorial {
+  padding: 70px 0 120px;
+
+  // .tutorial__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .tutorial__item
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    // .tutorial__item-images
+
+    &-images {
+      min-height: 270px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    // .tutorial__item-title
+
+    &-title {
+      padding: 30px 10px;
+      font-size: 24px;
+      @include f700;
+      color: $bg;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+  }
+
+
+}
+
+// TUTORIAL END
