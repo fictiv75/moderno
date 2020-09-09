@@ -6,7 +6,8 @@
 .header {
   // .header__top
 
-  &__top {}
+  &__top {
+  }
 
   // .header__top-inner
 
@@ -19,7 +20,8 @@
 
   // .header__logo
 
-  &__logo {}
+  &__logo {
+  }
 
   // .header__text
 
@@ -34,11 +36,13 @@
 
   // .header__phone
 
-  &__phone {}
+  &__phone {
+  }
 
   // .header__box
 
-  &__box {}
+  &__box {
+  }
 
   // .header__btn
 
@@ -71,7 +75,8 @@
   }
 }
 
-.basket {}
+.basket {
+}
 
 .menu {
   display: flex;
@@ -84,7 +89,7 @@
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 30px;
       }
     }
@@ -92,7 +97,7 @@
     a {
       color: #fff;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
 }
@@ -118,14 +123,14 @@
       margin-bottom: 10px;
       font-size: 48px;
       line-height: 72px;
-      font-weight: 700;
+      @include f700;
     }
 
     &-text {
       margin-bottom: 50px;
       font-size: 20px;
       line-height: 30px;
-      font-weight: 500;
+      @include f500;
     }
 
     // .search__inner-form
@@ -144,7 +149,7 @@
         border-radius: 4px;
         border: none;
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         padding-left: 25px;
         padding-right: 60px;
 
@@ -154,7 +159,7 @@
 
         &::placeholder {
           color: #90a4ae;
-          font-weight: 500;
+          @include f500;
         }
       }
 
@@ -179,11 +184,13 @@
 
   // .products__titel
 
-  &__title {}
+  &__title {
+  }
 
   // .products__inner
 
-  &__inner {}
+  &__inner {
+  }
 
   // .products__inner-btn
 
@@ -194,13 +201,13 @@
     button {
       padding: 12px 21px;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       background-color: #fff;
       color: $bg;
       border: none;
       cursor: pointer;
 
-      &+button {
+      & + button {
         margin-left: 5px;
       }
 
@@ -245,7 +252,7 @@
       align-items: center;
       padding: 10px 30px;
       min-height: 90px;
-      font-weight: 500;
+      @include f500;
       border-bottom: 1px solid #e7ecf2;
     }
 
@@ -273,7 +280,7 @@
 
     &-price {
       font-size: 20px;
-      font-weight: 700;
+      @include f700;
       color: $bg;
     }
 
@@ -296,7 +303,7 @@
 
       span {
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
       }
 
       .avatar {
@@ -344,8 +351,7 @@
 
 // PRODUCTS END
 
-
-// PRODUCT SLIDER 
+// PRODUCT SLIDER
 
 .product-slider {
   padding: 110px 0 120px;
@@ -364,7 +370,6 @@
           border: none;
         }
       }
-      
 
       button {
         width: 16px;
@@ -377,5 +382,89 @@
         outline: none;
       }
     }
+  }
+}
+// PRODUCT SLIDER END
+
+// ADVANTAGES
+.advantages {
+  background-color: $bg;
+  padding: 110px 0;
+
+  // .advantages__title
+
+  &__title {
+    color: #fff;
+  }
+
+  // .advantages__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .advantages__item
+
+  &__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0 15px;
+    &:hover {
+      .advantages__item-images {
+        background-color: $green;
+        svg {
+          fill: #fff;
+        }
+      }
+      .advantages__item-title {
+        color: $green;
+      }
+
+    }
+    // .advantages__item-images
+
+    &-images {
+      width: 113px;
+      height: 113px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 30px;
+      transition: all 0.3s;
+    }
+    // .advantages__item-title
+
+    &-title {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #fff;
+      @include f500;
+      transition: all 0.3s;
+    }
+
+    // .advantages__item-text
+
+    &-text {
+      font-size: 15px;
+    }
+  }
+}
+
+.icosvg-1 {
+  svg {
+    width: 50px;
+  }
+}
+.icosvg-2 {
+  svg {
+    width: 71px;
+  }
+}
+.icosvg-3 {
+  svg {
+    width: 86px;
   }
 }
