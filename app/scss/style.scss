@@ -6,8 +6,7 @@
 .header {
   // .header__top
 
-  &__top {
-  }
+  &__top {}
 
   // .header__top-inner
 
@@ -20,8 +19,7 @@
 
   // .header__logo
 
-  &__logo {
-  }
+  &__logo {}
 
   // .header__text
 
@@ -36,13 +34,11 @@
 
   // .header__phone
 
-  &__phone {
-  }
+  &__phone {}
 
   // .header__box
 
-  &__box {
-  }
+  &__box {}
 
   // .header__btn
 
@@ -75,8 +71,7 @@
   }
 }
 
-.basket {
-}
+.basket {}
 
 .menu {
   display: flex;
@@ -89,7 +84,7 @@
     li {
       display: inline-block;
 
-      & + li {
+      &+li {
         margin-left: 30px;
       }
     }
@@ -184,13 +179,11 @@
 
   // .products__titel
 
-  &__title {
-  }
+  &__title {}
 
   // .products__inner
 
-  &__inner {
-  }
+  &__inner {}
 
   // .products__inner-btn
 
@@ -207,7 +200,7 @@
       border: none;
       cursor: pointer;
 
-      & + button {
+      &+button {
         margin-left: 5px;
       }
 
@@ -364,6 +357,7 @@
       display: inline-block;
       margin-left: 3px;
       margin-right: 3px;
+
       &.slick-active {
         button {
           background-color: $green;
@@ -384,6 +378,7 @@
     }
   }
 }
+
 // PRODUCT SLIDER END
 
 // ADVANTAGES
@@ -410,18 +405,21 @@
     max-width: 370px;
     text-align: center;
     padding: 0 15px;
+
     &:hover {
       .advantages__item-images {
         background-color: $green;
+
         svg {
           fill: #fff;
         }
       }
+
       .advantages__item-title {
         color: $green;
       }
-
     }
+
     // .advantages__item-images
 
     &-images {
@@ -435,6 +433,7 @@
       margin: 0 auto 30px;
       transition: all 0.3s;
     }
+
     // .advantages__item-title
 
     &-title {
@@ -458,13 +457,65 @@
     width: 50px;
   }
 }
+
 .icosvg-2 {
   svg {
     width: 71px;
   }
 }
+
 .icosvg-3 {
   svg {
     width: 86px;
   }
 }
+
+// ADVANTAGES END
+
+// AUTHOR
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .author__box
+
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+  }
+
+  // .author__title
+
+  &__title {
+    max-width: 265px;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 45px;
+
+    span {
+      @include f700;
+    }
+  }
+
+  // .author__lin
+
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
+  }
+}
+
+// AUTHOR END
