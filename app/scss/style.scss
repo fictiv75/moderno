@@ -4,6 +4,7 @@
 
 // HEADER
 .header {
+  background-color: #fff;
   // .header__top
 
   &__top {}
@@ -90,6 +91,7 @@
     }
 
     .basket {
+      margin-right: 20px;
       span {
         background-color: $green-dark;
       }
@@ -108,7 +110,6 @@
     }
 
     .user {
-      margin-left: 20px;
       margin-right: 25px;
       padding-right: 20px;
       position: relative;
@@ -240,6 +241,7 @@
 .circle__menu {
   position: absolute;
   top: 69px;
+  z-index: 1;
 }
 
 .user__box,
@@ -273,7 +275,7 @@
 .notification__box,
 .message__box {
   margin-top: 54px;
-  margin-left: 15px;
+  padding-left: 15px;
 
   &:hover {
     .header__circle::before {
@@ -402,6 +404,11 @@
 
 .icons-color::before {
   color: $tomato;
+}
+
+.header__btn-menu,
+.menu__btn {
+  display: none;
 }
 
 // HEADER END
@@ -1059,19 +1066,19 @@
 }
 
 .link-twitter {
-  background-position: -29px -29px;
+  background-position: -29px -27px;
 }
 
 .link-youtube {
-  background-position: -61px -0;
+  background-position: -56px -0;
 }
 
 .link-pinterest {
-  background-position: -0 -30px;
+  background-position: -0 -28px;
 }
 
 .link-linkedin {
-  background-position: -29px -0;
+  background-position: -26px -0;
 }
 
 // FOOTER END
@@ -1533,3 +1540,6 @@ button.icon-unsorted {
 }
 
 // PRODUCT PAGE END
+
+
+@import 'media';
