@@ -405,6 +405,133 @@
 
 // HEADER END
 
+// MODAL
+#modal {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 155px;
+}
+
+.login__wrapper {
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      font-family: 'icomoon' !important;
+      font-size: 14px;
+      color: #fff;
+      left: 18px;
+      top: 10px;
+    }
+  }
+
+  .login__label-name::before {
+    content: "\f007";
+  }
+
+  .login__label-pass::before {
+    content: "\f023";
+  }
+
+  input {
+    height: 43px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    outline: transparent;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  // .login__title
+
+  .login__title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    @include f700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  button {
+    margin-top: 19px;
+    margin-right: 10px;
+    width: 140px;
+    border: none;
+    padding: 18px 0 16px;
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+    background-color: #ffffff;
+    color: #000000;
+    @include f700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.lost-pass {
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.creat-acc {
+  padding: 13px 0 15px 28px;
+  text-align: center;
+  width: 245px;
+  background-color: #76ae36;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  &::before {
+    content: '\f044';
+    font-family: 'icomoon' !important;
+    font-size: 18px;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+}
+
+.fancybox-button svg path {
+  fill: transparent;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  
+  &::before {
+    content: "\f00d";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+// MODAL END
+
 // SEARCH
 .search {
   background-image: url("../images/search-bg.jpg");
@@ -1677,10 +1804,6 @@ button.icon-unsorted {
     }
   }
 
-  // .product-one__tabs
-
-  &__tabs {}
-
   // .product-one__more
 
   &__more {
@@ -1706,14 +1829,6 @@ button.icon-unsorted {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  // .product-one__more-icon
-
-  &__more-icon {}
-
-  // .product-one__aside
-
-  &__aside {}
 }
 
 .productmini {
@@ -1736,10 +1851,6 @@ button.icon-unsorted {
     background-position: center;
     background-size: cover;
   }
-
-  // .productmini__info
-
-  &__info {}
 
   // .productmini__name
 
@@ -1782,6 +1893,10 @@ button.icon-unsorted {
     &+.tab {
       border-left: 1px solid #d7d7d7;
     }
+
+    &.active {
+      border-bottom: 3px solid $green;
+    }
   }
 }
 
@@ -1790,10 +1905,6 @@ button.icon-unsorted {
   border: 1px solid #d7d7d7;
   border-top: none;
   padding: 30px 30px 50px;
-}
-
-.active {
-  border-bottom: 3px solid $green;
 }
 
 .tab-item {
@@ -1814,24 +1925,6 @@ button.icon-unsorted {
       width: 100%;
     }
   }
-}
-
-.active-tab {}
-
-
-.aside {
-
-  // .aside__item
-
-  &__item {}
-
-  // .aside__title
-
-  &__title {}
-
-  // .aside__item-sales
-
-  &__item-sales {}
 }
 
 .price {
