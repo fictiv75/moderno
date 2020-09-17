@@ -196,7 +196,7 @@
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 30px;
       }
     }
@@ -415,7 +415,6 @@
 }
 
 .login__wrapper {
-
   form {
     max-width: 400px;
     margin: 0 auto;
@@ -428,7 +427,7 @@
 
     &::before {
       position: absolute;
-      font-family: 'icomoon' !important;
+      font-family: "icomoon" !important;
       font-size: 14px;
       color: #fff;
       left: 18px;
@@ -504,8 +503,8 @@
   font-size: 18px;
   position: relative;
   &::before {
-    content: '\f044';
-    font-family: 'icomoon' !important;
+    content: "\f044";
+    font-family: "icomoon" !important;
     font-size: 18px;
     position: absolute;
     top: 15px;
@@ -518,10 +517,9 @@
 }
 
 .fancybox-slide--html .fancybox-close-small {
-  
   &::before {
     content: "\f00d";
-    font-family: 'icomoon' !important;
+    font-family: "icomoon" !important;
     position: absolute;
     font-size: 18px;
     color: #fff;
@@ -637,7 +635,7 @@
       border: none;
       cursor: pointer;
 
-      &+button {
+      & + button {
         margin-left: 5px;
       }
 
@@ -1105,7 +1103,7 @@
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 7px;
       }
     }
@@ -1487,7 +1485,7 @@ button.icon-unsorted {
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 6px;
       }
     }
@@ -1537,7 +1535,7 @@ button.icon-unsorted {
   top: 19px;
 }
 
-.irs--flat .irs-handle>i:first-child {
+.irs--flat .irs-handle > i:first-child {
   display: none;
 }
 
@@ -1660,7 +1658,6 @@ button.icon-unsorted {
 
 // PRODUCT PAGE END
 
-
 // PRODUCT-ONE PAGE
 .product-one {
   padding-bottom: 100px;
@@ -1740,7 +1737,7 @@ button.icon-unsorted {
       color: $grey;
       font-size: 14px;
 
-      &+a {
+      & + a {
         margin-left: 20px;
       }
     }
@@ -1762,7 +1759,6 @@ button.icon-unsorted {
     &--documentation {
       background-color: $green;
     }
-
   }
 
   // .product-one__social
@@ -1773,7 +1769,7 @@ button.icon-unsorted {
       height: 50px;
       position: relative;
 
-      &+a {
+      & + a {
         margin-left: 3px;
       }
 
@@ -1876,7 +1872,6 @@ button.icon-unsorted {
   }
 }
 
-
 .tabs {
   display: flex;
   text-align: center;
@@ -1890,7 +1885,7 @@ button.icon-unsorted {
     padding: 20px 0;
     cursor: pointer;
 
-    &+.tab {
+    & + .tab {
       border-left: 1px solid #d7d7d7;
     }
 
@@ -1928,7 +1923,6 @@ button.icon-unsorted {
 }
 
 .price {
-
   // .price__box
 
   &__box {
@@ -1943,7 +1937,6 @@ button.icon-unsorted {
     font-size: 22px;
     @include f500;
     color: $red;
-
   }
 }
 
@@ -1955,7 +1948,7 @@ button.icon-unsorted {
     background-color: $text;
     font-size: 16px;
     color: #fff;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
     font-weight: 700;
     text-align: center;
     display: block;
@@ -1970,7 +1963,7 @@ button.icon-unsorted {
 
     &::before {
       font-weight: 400;
-      font-family: 'icomoon' !important;
+      font-family: "icomoon" !important;
       padding-right: 8px;
     }
   }
@@ -1984,10 +1977,7 @@ button.icon-unsorted {
   }
 }
 
-
-
 .product-author {
-
   // .product-author__box
 
   &__box {
@@ -1998,14 +1988,11 @@ button.icon-unsorted {
 }
 
 .author {
-
   // .author__avatar
 
   &__avatar {
     margin-right: 14px;
   }
-
-
 
   // .author__awards-list
 
@@ -2024,46 +2011,44 @@ button.icon-unsorted {
         right: 0;
       }
 
-      &+li {
+      & + li {
         margin-left: 4px;
       }
     }
 
     .icon-meh-o {
-      background-image: url('../images/awards/awards-orange.png');
+      background-image: url("../images/awards/awards-orange.png");
       width: 34px;
       height: 37px;
     }
 
     .icon-pagelines {
-      background-image: url('../images/awards/awards-red.png');
+      background-image: url("../images/awards/awards-red.png");
       width: 34px;
       height: 37px;
     }
 
     .icon-flash {
-      background-image: url('../images/awards/awards-blue.png');
+      background-image: url("../images/awards/awards-blue.png");
       width: 34px;
       height: 37px;
     }
 
     .icon-foursquare {
-      background-image: url('../images/awards/awards-green.png');
+      background-image: url("../images/awards/awards-green.png");
       width: 34px;
       height: 37px;
     }
 
     .icon-yen {
-      background-image: url('../images/awards/awards-grey.png');
+      background-image: url("../images/awards/awards-grey.png");
       width: 34px;
       height: 37px;
     }
-
   }
 }
 
 .author {
-
   // .autho__info
 
   &__info {
@@ -2101,7 +2086,7 @@ button.icon-unsorted {
 
     &::before {
       content: "\f07a";
-      font-family: 'icomoon' !important;
+      font-family: "icomoon" !important;
       color: #a6b5bb;
       padding-right: 20px;
     }
@@ -2113,7 +2098,6 @@ button.icon-unsorted {
 }
 
 .information {
-
   // .information__line
 
   &__line {
@@ -2128,10 +2112,148 @@ button.icon-unsorted {
     }
   }
 }
-
-
-
 // PRODUCT-ONE PAGE END
 
+// PAGE 404
+.page-404 {
+  // .page-404__wrapper
 
-@import 'media';
+  &__wrapper {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+  }
+
+  // .page-404__head
+
+  &__head {
+    padding: 23px 27px;
+    font-size: 24px;
+    color: #444444;
+    @include f500;
+  }
+
+  // .page-404__inner
+
+  &__inner {
+    text-align: center;
+    background-color: $green;
+  }
+
+  // .page-404__404
+
+  &__404 {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: #fffefe;
+    font-size: 300px;
+    line-height: 300px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/page-404.png");
+      width: 157px;
+      height: 301px;
+      margin-left: 20px;
+    }
+  }
+
+  // .page-404__title
+
+  &__title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 6px;
+  }
+
+  // .page-404__text
+
+  &__text {
+    max-width: 530px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  // .page-404__link
+
+  &__link {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    padding: 20px 30px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+  }
+}
+// PAGE 404 END
+
+// ABOUT
+.about {
+
+  // .about__wrapper
+
+  &__wrapper {
+    margin-top: 100px;
+    margin-bottom: 145px;
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+  }
+
+  // .about__head
+
+  &__head {
+    padding: 23px 27px;
+    font-size: 24px;
+    color: #444444;
+    @include f500;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  // .about__inner
+
+  &__inner {
+    padding: 0 50px;
+    text-align: left;
+  }
+
+  // .about__box
+
+  &__box {
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      @include f700;
+      color: #444444;
+    }
+    p {
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #707070;
+      line-height: 24px;
+
+    }
+  }
+}
+
+
+// ABOUT END
+
+@import "media";
