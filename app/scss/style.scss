@@ -9,10 +9,10 @@
   // .header__top-inner
 
   &__top-inner {
-    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
   }
 
   // .header__text
@@ -196,7 +196,7 @@
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 30px;
       }
     }
@@ -407,6 +407,7 @@
 
 // MODAL
 #modal {
+  display: none;
   background-color: $green;
   max-width: 730px;
   width: 100%;
@@ -636,7 +637,7 @@
       border: none;
       cursor: pointer;
 
-      &+button {
+      & + button {
         margin-left: 5px;
       }
 
@@ -1104,7 +1105,7 @@
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 7px;
       }
     }
@@ -1134,6 +1135,10 @@
 
       &::placeholder {
         color: #697378;
+      }
+      &:focus {
+        outline: transparent;
+        box-shadow: 0px 0px 0px 1px rgba(176, 198, 225, 0.6);
       }
     }
 
@@ -1486,7 +1491,7 @@ button.icon-unsorted {
     li {
       display: inline-block;
 
-      &+li {
+      & + li {
         margin-left: 6px;
       }
     }
@@ -1536,7 +1541,7 @@ button.icon-unsorted {
   top: 19px;
 }
 
-.irs--flat .irs-handle>i:first-child {
+.irs--flat .irs-handle > i:first-child {
   display: none;
 }
 
@@ -1738,7 +1743,7 @@ button.icon-unsorted {
       color: $grey;
       font-size: 14px;
 
-      &+a {
+      & + a {
         margin-left: 20px;
       }
     }
@@ -1770,7 +1775,7 @@ button.icon-unsorted {
       height: 50px;
       position: relative;
 
-      &+a {
+      & + a {
         margin-left: 3px;
       }
 
@@ -1886,7 +1891,7 @@ button.icon-unsorted {
     padding: 20px 0;
     cursor: pointer;
 
-    &+.tab {
+    & + .tab {
       border-left: 1px solid #d7d7d7;
     }
 
@@ -1930,6 +1935,49 @@ button.icon-unsorted {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+
+    .jq-selectbox {
+      width: 100%;
+    }
+
+    .jq-selectbox__select {
+      height: 27px;
+      padding-left: 11px;
+      padding-right: 27px;
+      border: 1px solid #d7d7d7;
+      border-bottom-color: #d7d7d7;
+      border-radius: 0;
+      background: #f9f9f9;
+      box-shadow: none;
+      font-family: "Roboto-Regular", sans-serif;
+      color: #707070;
+      text-shadow: none;
+      line-height: 27px;
+    }
+
+    .jq-selectbox__trigger {
+      border-left: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+      border: none;
+      font-size: 15px;
+      color: $green;
+      line-height: 27px;
+      right: 20px;
+      top: 0;
+
+      &::before {
+        content: "\f0d7";
+        font-family: "icomoon";
+      }
+    }
+
+    .jq-selectbox__dropdown {
+      height: auto;
+      bottom: auto;
+      top: 37px;
+    }
   }
 
   // .price__product
@@ -2012,7 +2060,7 @@ button.icon-unsorted {
         right: 0;
       }
 
-      &+li {
+      & + li {
         margin-left: 4px;
       }
     }
@@ -2465,7 +2513,7 @@ button.icon-unsorted {
     }
   }
 
-  .tabs .tab+.tab {
+  .tabs .tab + .tab {
     border-left: none;
   }
 
@@ -2500,7 +2548,7 @@ button.icon-unsorted {
     align-items: center;
 
     label {
-      width: 260px;
+      min-width: 260px;
       color: #444444;
     }
 
@@ -2525,6 +2573,57 @@ button.icon-unsorted {
       color: #707070;
       font-size: 14px;
     }
+  }
+
+  .jq-file {
+    width: 100%;
+    padding: 0 18px;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #d7d7d7;
+    background-color: #f9f9f9;
+    height: 40px;
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #707070;
+    text-shadow: none;
+    line-height: 40px;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    font-size: 15px;
+    line-height: 40px;
+    right: 20px;
+    top: 0;
+
+    &::before {
+      content: "\f0d7";
+      font-family: "icomoon";
+    }
+  }
+
+  .jq-selectbox__dropdown {
+    height: auto;
+    bottom: auto;
+    top: 37px;
   }
 }
 
@@ -2599,7 +2698,7 @@ button.icon-unsorted {
   &::before {
     position: absolute;
     content: "\f003";
-    font-family: 'icomoon';
+    font-family: "icomoon";
     left: 50px;
     top: 17px;
   }
@@ -2642,7 +2741,7 @@ button.icon-unsorted {
   text-align: center;
   padding: 16px 5px 16px;
 
-  &+.profile__item {
+  & + .profile__item {
     border-left: 1px solid #d7d7d7;
   }
 }
@@ -2651,7 +2750,6 @@ button.icon-unsorted {
   font-size: 14px;
   @include f500;
   color: $bg;
-
 }
 
 .profile__item-content {
@@ -2667,7 +2765,7 @@ button.icon-unsorted {
 .profole-settings {
   .product-one__tabs.settings__tabs {
     .tabs span {
-      font-family: 'Roboto', sans-serif !important;
+      font-family: "Roboto", sans-serif !important;
       font-weight: 500;
       color: #707070;
       position: relative;
@@ -2677,7 +2775,7 @@ button.icon-unsorted {
       }
 
       &::before {
-        font-family: 'icomoon' !important;
+        font-family: "icomoon" !important;
         position: absolute;
         top: 15px;
         left: 27px;
@@ -2739,11 +2837,172 @@ button.icon-unsorted {
     display: block;
     height: 15px;
     border-radius: 3px;
-    background-image: url('../images/progressbar.jpg');
+    background-image: url("../images/progressbar.jpg");
     background-repeat: repeat;
   }
 }
 
 // PROFILE END
+
+// UPLOAD
+.upload {
+  .upload__inner {
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+    margin-bottom: 110px;
+
+    button {
+      color: #fff;
+      background-color: $green;
+      border: none;
+      padding: 15px 36px;
+      margin-left: 175px;
+      cursor: pointer;
+    }
+  }
+
+  .upload__inner-title {
+    padding: 16px 35px 18px;
+    font-size: 24px;
+    @include f500;
+    color: $bg;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 40px;
+  }
+
+  .upload__inner-content {
+    margin-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 50px;
+  }
+
+  .upload-line {
+    margin-bottom: 25px;
+    display: flex;
+
+    label {
+      padding-top: 5px;
+      min-width: 175px;
+      padding-right: 15px;
+      color: #444444;
+
+      span {
+        color: $green;
+      }
+    }
+
+    select,
+    input,
+    textarea {
+      width: 100%;
+      display: block;
+      border: 1px solid #d7d7d7;
+      background-color: #f9f9f9;
+      height: 40px;
+      padding: 0 18px;
+
+      &::placeholder {
+        color: #707070;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+      padding: 8px 18px;
+    }
+  }
+
+  input[type="file"] {
+    outline: none;
+  }
+
+  .jq-file {
+    width: 100%;
+    padding: 0 18px;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #d7d7d7;
+    background-color: #f9f9f9;
+    height: 40px;
+  }
+
+  .jq-file__browse {
+    top: 5px;
+    right: auto;
+    left: 9px;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 26px;
+    border-left: 1px solid #d7d7d7;
+    border: 1px solid #d7d7d7;
+    border-radius: 0px;
+    background: #fff;
+    box-shadow: none;
+    text-shadow: none;
+    color: #444;
+  }
+
+  .jq-file__name {
+    margin-left: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    // padding: 0 18px;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    font-size: 12px;
+    color: #707070;
+    line-height: 40px;
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #707070;
+    text-shadow: none;
+    line-height: 40px;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    font-size: 15px;
+    line-height: 40px;
+    right: 20px;
+    top: 0;
+
+    &::before {
+      content: "\f0d7";
+      font-family: "icomoon";
+    }
+  }
+
+  .jq-selectbox__dropdown {
+    height: auto;
+    bottom: auto;
+    top: 37px;
+  }
+}
+
+// UPLOAD END
 
 @import "media";
